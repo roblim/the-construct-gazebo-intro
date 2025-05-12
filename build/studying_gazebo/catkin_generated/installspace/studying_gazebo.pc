@@ -1,0 +1,8 @@
+prefix=/home/user/catkin_ws/install
+
+Name: studying_gazebo
+Description: Description of studying_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
