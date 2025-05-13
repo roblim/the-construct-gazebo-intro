@@ -480,6 +480,19 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named world_plugin
+
+# Build rule for target.
+world_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 world_plugin
+.PHONY : world_plugin
+
+# fast build rule for target.
+world_plugin/fast:
+	$(MAKE) -f writing_plugins/CMakeFiles/world_plugin.dir/build.make writing_plugins/CMakeFiles/world_plugin.dir/build
+.PHONY : world_plugin/fast
+
+#=============================================================================
 # Target rules for targets named visualization_msgs_generate_messages_py
 
 # Build rule for target.
@@ -1504,6 +1517,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... world_plugin"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... visualization_msgs_generate_messages_nodejs"
 	@echo "... visualization_msgs_generate_messages_lisp"

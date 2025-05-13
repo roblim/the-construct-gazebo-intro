@@ -9,7 +9,22 @@ namespace gazebo {
 
         public:
         void Load(physics::WorldPtr _world, sdf::ElementPtr _sdf) {
-            printf("Everything is awesome!\n");
+            // set a node
+            transport::NodePtr node(new transport::Node());
+            node->Init(_world->Name());
+
+            // set publisher
+            transport::PublisherPtr publisher =
+                node->Advertise<msgs::Factory>("~/factory");
+
+            // create msg obj
+            msgs::Factory msg;
+
+            // model to use
+            msg.set_sdf_filename("model://jersey_barrier");
+
+            // Send the message
+            publisher->Publish(msg);
         }
     };
 

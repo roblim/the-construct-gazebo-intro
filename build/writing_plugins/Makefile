@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+writing_plugins/CMakeFiles/world_plugin.dir/rule:
+	cd /home/user/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 writing_plugins/CMakeFiles/world_plugin.dir/rule
+.PHONY : writing_plugins/CMakeFiles/world_plugin.dir/rule
+
+# Convenience name for target.
+world_plugin: writing_plugins/CMakeFiles/world_plugin.dir/rule
+
+.PHONY : world_plugin
+
+# fast build rule for target.
+world_plugin/fast:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/world_plugin.dir/build.make writing_plugins/CMakeFiles/world_plugin.dir/build
+.PHONY : world_plugin/fast
+
+# Convenience name for target.
 writing_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule:
 	cd /home/user/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 writing_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
 .PHONY : writing_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/rule
@@ -1319,6 +1334,33 @@ src/my_gazebo_plugin.cc.s:
 	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/my_gazebo_plugin.dir/build.make writing_plugins/CMakeFiles/my_gazebo_plugin.dir/src/my_gazebo_plugin.cc.s
 .PHONY : src/my_gazebo_plugin.cc.s
 
+src/world_plugin.o: src/world_plugin.cc.o
+
+.PHONY : src/world_plugin.o
+
+# target to build an object file
+src/world_plugin.cc.o:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/world_plugin.dir/build.make writing_plugins/CMakeFiles/world_plugin.dir/src/world_plugin.cc.o
+.PHONY : src/world_plugin.cc.o
+
+src/world_plugin.i: src/world_plugin.cc.i
+
+.PHONY : src/world_plugin.i
+
+# target to preprocess a source file
+src/world_plugin.cc.i:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/world_plugin.dir/build.make writing_plugins/CMakeFiles/world_plugin.dir/src/world_plugin.cc.i
+.PHONY : src/world_plugin.cc.i
+
+src/world_plugin.s: src/world_plugin.cc.s
+
+.PHONY : src/world_plugin.s
+
+# target to generate assembly for a file
+src/world_plugin.cc.s:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/world_plugin.dir/build.make writing_plugins/CMakeFiles/world_plugin.dir/src/world_plugin.cc.s
+.PHONY : src/world_plugin.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1330,6 +1372,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... world_plugin"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... visualization_msgs_generate_messages_nodejs"
 	@echo "... visualization_msgs_generate_messages_lisp"
@@ -1410,6 +1453,9 @@ help:
 	@echo "... src/my_gazebo_plugin.o"
 	@echo "... src/my_gazebo_plugin.i"
 	@echo "... src/my_gazebo_plugin.s"
+	@echo "... src/world_plugin.o"
+	@echo "... src/world_plugin.i"
+	@echo "... src/world_plugin.s"
 .PHONY : help
 
 

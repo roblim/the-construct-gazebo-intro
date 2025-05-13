@@ -462,6 +462,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "studying_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/DependInfo.cmake"
   "studying_gazebo/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"
   "studying_gazebo/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake"
+  "writing_plugins/CMakeFiles/world_plugin.dir/DependInfo.cmake"
   "writing_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir/DependInfo.cmake"
   "writing_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "writing_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir/DependInfo.cmake"

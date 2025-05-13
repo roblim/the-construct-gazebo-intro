@@ -62,6 +62,7 @@
 /home/user/catkin_ws/build/writing_plugins/CMakeFiles/list_install_components.dir
 /home/user/catkin_ws/build/writing_plugins/CMakeFiles/rebuild_cache.dir
 /home/user/catkin_ws/build/writing_plugins/CMakeFiles/test.dir
+/home/user/catkin_ws/build/writing_plugins/CMakeFiles/world_plugin.dir
 /home/user/catkin_ws/build/writing_plugins/CMakeFiles/visualization_msgs_generate_messages_py.dir
 /home/user/catkin_ws/build/writing_plugins/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir
 /home/user/catkin_ws/build/writing_plugins/CMakeFiles/visualization_msgs_generate_messages_lisp.dir

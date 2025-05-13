@@ -133,6 +133,9 @@ list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
 add_library(my_gazebo_plugin SHARED src/my_gazebo_plugin.cc)
 target_link_libraries(my_gazebo_plugin ${GAZEBO_LIBRARIES})
 
+add_library(world_plugin SHARED src/world_plugin.cc)
+target_link_libraries(world_plugin ${GAZEBO_LIBRARIES})
+
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
