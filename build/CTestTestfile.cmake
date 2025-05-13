@@ -6,4 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("studying_gazebo")
+subdirs("writing_plugins")
 subdirs("robot_description")
