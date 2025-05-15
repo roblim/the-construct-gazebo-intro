@@ -1,0 +1,40 @@
+<?xml version="1.0"?> 
+<sdf version="1.4">
+    <world name="default">
+        <!-- Ground Plane -->
+        <include>
+            <uri>model://ground_plane</uri>
+        </include>
+        <!-- Sun -->
+        <include>
+            <uri>model://sun</uri>
+        </include>
+        <!-- Model -->
+        <model name="a_barrier">
+            <pose>1 1 0 0 0 0</pose>
+            <static>false</static>
+            <include>
+                <uri>model://construction_barrel</uri>
+            </include>
+            <!-- <collision name="collision">
+                <geometry>
+                    <box>
+                    <size>1 1 1</size>
+                    </box>
+                </geometry>
+                <surface>
+                    <friction>
+                    <ode>
+                        <mu>0</mu>
+                        <mu2>0</mu2>
+                    </ode>
+                    </friction>
+                </surface>
+            </collision> -->
+            <plugin name="a_model_plugin" filename="liba_model_plugin.so">
+                <linear_vel>0.3</linear_vel>
+                <iterations>10000</iterations>
+            </plugin>
+        </model>
+    </world>
+</sdf>

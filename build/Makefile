@@ -480,6 +480,19 @@ rosgraph_msgs_generate_messages_py/fast:
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named a_model_plugin
+
+# Build rule for target.
+a_model_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 a_model_plugin
+.PHONY : a_model_plugin
+
+# fast build rule for target.
+a_model_plugin/fast:
+	$(MAKE) -f writing_plugins/CMakeFiles/a_model_plugin.dir/build.make writing_plugins/CMakeFiles/a_model_plugin.dir/build
+.PHONY : a_model_plugin/fast
+
+#=============================================================================
 # Target rules for targets named world_plugin
 
 # Build rule for target.
@@ -1143,6 +1156,19 @@ geometry_msgs_generate_messages_cpp/fast:
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named my_model_plugin
+
+# Build rule for target.
+my_model_plugin: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 my_model_plugin
+.PHONY : my_model_plugin
+
+# fast build rule for target.
+my_model_plugin/fast:
+	$(MAKE) -f writing_plugins/CMakeFiles/my_model_plugin.dir/build.make writing_plugins/CMakeFiles/my_model_plugin.dir/build
+.PHONY : my_model_plugin/fast
+
+#=============================================================================
 # Target rules for targets named nodelet_generate_messages_nodejs
 
 # Build rule for target.
@@ -1517,6 +1543,7 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... a_model_plugin"
 	@echo "... world_plugin"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... visualization_msgs_generate_messages_nodejs"
@@ -1568,6 +1595,7 @@ help:
 	@echo "... gazebo_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... my_model_plugin"
 	@echo "... nodelet_generate_messages_nodejs"
 	@echo "... bond_generate_messages_nodejs"
 	@echo "... std_srvs_generate_messages_nodejs"

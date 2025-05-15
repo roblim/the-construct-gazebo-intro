@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+writing_plugins/CMakeFiles/a_model_plugin.dir/rule:
+	cd /home/user/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 writing_plugins/CMakeFiles/a_model_plugin.dir/rule
+.PHONY : writing_plugins/CMakeFiles/a_model_plugin.dir/rule
+
+# Convenience name for target.
+a_model_plugin: writing_plugins/CMakeFiles/a_model_plugin.dir/rule
+
+.PHONY : a_model_plugin
+
+# fast build rule for target.
+a_model_plugin/fast:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/a_model_plugin.dir/build.make writing_plugins/CMakeFiles/a_model_plugin.dir/build
+.PHONY : a_model_plugin/fast
+
+# Convenience name for target.
 writing_plugins/CMakeFiles/world_plugin.dir/rule:
 	cd /home/user/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 writing_plugins/CMakeFiles/world_plugin.dir/rule
 .PHONY : writing_plugins/CMakeFiles/world_plugin.dir/rule
@@ -933,6 +948,21 @@ geometry_msgs_generate_messages_cpp/fast:
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
+writing_plugins/CMakeFiles/my_model_plugin.dir/rule:
+	cd /home/user/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 writing_plugins/CMakeFiles/my_model_plugin.dir/rule
+.PHONY : writing_plugins/CMakeFiles/my_model_plugin.dir/rule
+
+# Convenience name for target.
+my_model_plugin: writing_plugins/CMakeFiles/my_model_plugin.dir/rule
+
+.PHONY : my_model_plugin
+
+# fast build rule for target.
+my_model_plugin/fast:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/my_model_plugin.dir/build.make writing_plugins/CMakeFiles/my_model_plugin.dir/build
+.PHONY : my_model_plugin/fast
+
+# Convenience name for target.
 writing_plugins/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule:
 	cd /home/user/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 writing_plugins/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
 .PHONY : writing_plugins/CMakeFiles/nodelet_generate_messages_nodejs.dir/rule
@@ -1307,6 +1337,33 @@ tf2_msgs_generate_messages_eus/fast:
 	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make writing_plugins/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 .PHONY : tf2_msgs_generate_messages_eus/fast
 
+src/a_model_plugin.o: src/a_model_plugin.cc.o
+
+.PHONY : src/a_model_plugin.o
+
+# target to build an object file
+src/a_model_plugin.cc.o:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/a_model_plugin.dir/build.make writing_plugins/CMakeFiles/a_model_plugin.dir/src/a_model_plugin.cc.o
+.PHONY : src/a_model_plugin.cc.o
+
+src/a_model_plugin.i: src/a_model_plugin.cc.i
+
+.PHONY : src/a_model_plugin.i
+
+# target to preprocess a source file
+src/a_model_plugin.cc.i:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/a_model_plugin.dir/build.make writing_plugins/CMakeFiles/a_model_plugin.dir/src/a_model_plugin.cc.i
+.PHONY : src/a_model_plugin.cc.i
+
+src/a_model_plugin.s: src/a_model_plugin.cc.s
+
+.PHONY : src/a_model_plugin.s
+
+# target to generate assembly for a file
+src/a_model_plugin.cc.s:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/a_model_plugin.dir/build.make writing_plugins/CMakeFiles/a_model_plugin.dir/src/a_model_plugin.cc.s
+.PHONY : src/a_model_plugin.cc.s
+
 src/my_gazebo_plugin.o: src/my_gazebo_plugin.cc.o
 
 .PHONY : src/my_gazebo_plugin.o
@@ -1333,6 +1390,33 @@ src/my_gazebo_plugin.s: src/my_gazebo_plugin.cc.s
 src/my_gazebo_plugin.cc.s:
 	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/my_gazebo_plugin.dir/build.make writing_plugins/CMakeFiles/my_gazebo_plugin.dir/src/my_gazebo_plugin.cc.s
 .PHONY : src/my_gazebo_plugin.cc.s
+
+src/my_model_plugin.o: src/my_model_plugin.cc.o
+
+.PHONY : src/my_model_plugin.o
+
+# target to build an object file
+src/my_model_plugin.cc.o:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/my_model_plugin.dir/build.make writing_plugins/CMakeFiles/my_model_plugin.dir/src/my_model_plugin.cc.o
+.PHONY : src/my_model_plugin.cc.o
+
+src/my_model_plugin.i: src/my_model_plugin.cc.i
+
+.PHONY : src/my_model_plugin.i
+
+# target to preprocess a source file
+src/my_model_plugin.cc.i:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/my_model_plugin.dir/build.make writing_plugins/CMakeFiles/my_model_plugin.dir/src/my_model_plugin.cc.i
+.PHONY : src/my_model_plugin.cc.i
+
+src/my_model_plugin.s: src/my_model_plugin.cc.s
+
+.PHONY : src/my_model_plugin.s
+
+# target to generate assembly for a file
+src/my_model_plugin.cc.s:
+	cd /home/user/catkin_ws/build && $(MAKE) -f writing_plugins/CMakeFiles/my_model_plugin.dir/build.make writing_plugins/CMakeFiles/my_model_plugin.dir/src/my_model_plugin.cc.s
+.PHONY : src/my_model_plugin.cc.s
 
 src/world_plugin.o: src/world_plugin.cc.o
 
@@ -1372,6 +1456,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... a_model_plugin"
 	@echo "... world_plugin"
 	@echo "... visualization_msgs_generate_messages_py"
 	@echo "... visualization_msgs_generate_messages_nodejs"
@@ -1424,6 +1509,7 @@ help:
 	@echo "... gazebo_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_cpp"
+	@echo "... my_model_plugin"
 	@echo "... nodelet_generate_messages_nodejs"
 	@echo "... bond_generate_messages_nodejs"
 	@echo "... std_srvs_generate_messages_nodejs"
@@ -1450,9 +1536,15 @@ help:
 	@echo "... tf_generate_messages_py"
 	@echo "... sensor_msgs_generate_messages_py"
 	@echo "... tf2_msgs_generate_messages_eus"
+	@echo "... src/a_model_plugin.o"
+	@echo "... src/a_model_plugin.i"
+	@echo "... src/a_model_plugin.s"
 	@echo "... src/my_gazebo_plugin.o"
 	@echo "... src/my_gazebo_plugin.i"
 	@echo "... src/my_gazebo_plugin.s"
+	@echo "... src/my_model_plugin.o"
+	@echo "... src/my_model_plugin.i"
+	@echo "... src/my_model_plugin.s"
 	@echo "... src/world_plugin.o"
 	@echo "... src/world_plugin.i"
 	@echo "... src/world_plugin.s"
